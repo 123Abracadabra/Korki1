@@ -14,8 +14,17 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-}
+  height: 60px; /* Add this line to set the header height to 100 pixels */
+  padding-top: 10px; /* Add this line to add 20 pixels of space above the navigation links */
+  font-size: 32px;
 
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this line to center the elements vertically
+  */
+}
 nav ul {
   list-style: none;
   margin: 0;
@@ -23,6 +32,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 150px;
 }
 
 nav li {
@@ -39,6 +49,7 @@ nav a {
 
 nav a:hover {
   color: #0077cc;
+  background-color: #eee
 }
 
 /* hero section styles */
@@ -76,34 +87,25 @@ nav a:hover {
 
 /* courses section styles */
 .courses {
-  padding: 100px 0;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* add align-items center to vertically center the items */
 }
 
 .course {
-  margin: 20px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 300px;
-  position: relative; /* add position relative to position the .course-text element */
 }
 
 .course img {
   width: 100%;
-  margin-bottom: 20px;
-}
+  margin-bottom: 5px;
+  vertical-align: middle; /* Add this line */
 
-.course-text {
-  position: absolute; /* add position absolute to position the element relative to the parent */
-  top: 50%; /* center vertically using top: 50% */
-  left: 0;
-  right: 0;
-  transform: translateY(-50%); /* translate element up by 50% of its own height */
-  text-align: center;
 }
 
 .course h3 {
@@ -115,7 +117,11 @@ nav a:hover {
   font-size: 16px;
   margin-bottom: 20px;
 }
-
+.courses h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
 
 
 /* testimonials section styles */
