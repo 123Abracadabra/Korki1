@@ -80,6 +80,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; /* add align-items center to vertically center the items */
 }
 
 .course {
@@ -88,11 +89,21 @@ nav a:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 300px;
+  position: relative; /* add position relative to position the .course-text element */
 }
 
 .course img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.course-text {
+  position: absolute; /* add position absolute to position the element relative to the parent */
+  top: 50%; /* center vertically using top: 50% */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* translate element up by 50% of its own height */
+  text-align: center;
 }
 
 .course h3 {
@@ -104,6 +115,8 @@ nav a:hover {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+
 
 /* testimonials section styles */
 .testimonials {
@@ -125,4 +138,48 @@ nav a:hover {
 .testimonial h3 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.login {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.login h2 {
+  margin-top: 50px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.login label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #0062cc;
 }

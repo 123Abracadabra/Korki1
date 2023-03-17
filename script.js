@@ -11,3 +11,13 @@ $(document).ready(function() {
     });
   });
 });
+
+<div class="course">
+  <img src="course1.jpg" alt="Course 1">
+  <div class="course-text">
+    <h3>Popular Courses</h3>
+  </div>
+  <h3>Course 1</h3>
+  <p>Description of course 1.</p>
+  <a href="#" class="button">Enroll Now</a>
+</div>
