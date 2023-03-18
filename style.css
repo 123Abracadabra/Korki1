@@ -8,13 +8,13 @@
 /* header styles */
 header {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
-  height: 60px; /* Add this line to set the header height to 100 pixels */
+  height: 70px; /* Add this line to set the header height to 100 pixels */
   padding-top: 10px; /* Add this line to add 20 pixels of space above the navigation links */
   font-size: 32px;
 
@@ -32,18 +32,15 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 150px;
+  gap: 80px;
 }
 
-nav li {
-  margin: 0 10px;
-}
 
 nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -51,11 +48,24 @@ nav a:hover {
   color: #0077cc;
   background-color: #eee
 }
+nav .nielogin{
+  margin: 0 5px;
+  background-color: white;
+  color: #fff; /* Set the text color to white */
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+nav .login-link {
+	margin: 0 5px;
+  background-color: rgba(186, 13, 169);
+  color: #eee; /* Set the text color to white */
+    padding: 5px 10px;
+  border-radius: 8px;
+}
 
 /* hero section styles */
 .hero {
-  background-color: #0077cc;
-  color: #fff;
   padding: 100px;
   text-align: center;
 }
@@ -188,4 +198,84 @@ nav a:hover {
 
 .login input[type="submit"]:hover {
   background-color: #0062cc;
+}
+
+.prep-section, .flash-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.prep-text, .flash-text {
+  flex: 1;
+  padding: 0 50px;
+}
+
+.prep-text h2, .flash-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.prep-text p, .flash-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.prep-classes, .flash-btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.class-btn, .start-btn, .consult-btn {
+  display: block;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.class-btn:hover, .start-btn:hover, .consult-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.how-to-learn {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.how-to-learn h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.how-to-learn h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.how-to-learn p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.prepare {
+  padding: 80px 0;
+}
+
+.prepare h2 {
+  font-size: 36px;
+  font-weight:
+}
+
+.prep-section {
+	height: 700px;
+  padding-top: 40px; /* Add this line to add 20 pixels of space above the navigation links */
+	font-size: 32px;
 }
